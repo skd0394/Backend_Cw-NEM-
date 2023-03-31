@@ -2,7 +2,7 @@ const express = require("express");
 const { ProductModel } = require("../Model/product_model");
 // const app = express()
 const getRouter = express();
-getRouter.get("/", async (req, res) => {
+getRouter.get("/getdata", async (req, res) => {
   try {
     if (!req.query.price && !req.query.category) {
       console.log("ad");
@@ -32,7 +32,7 @@ getRouter.get("/", async (req, res) => {
   }
 });
 
-getRouter.get("/:id", async (req, res) => {
+getRouter.get("/getdata/:id", async (req, res) => {
   const { id } = req.params;
   console.log(id);
   try {
