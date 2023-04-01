@@ -1,6 +1,5 @@
 
 const express = require("express");
-const cors = require("cors")
 const { dbConnection } = require("./dbConnection");
 const { adminRouter } = require("./Routes/adminRoutes");
 const { getRouter } = require("./Routes/get_products.route");
@@ -9,6 +8,7 @@ const { CartRouter } = require("./Routes/cart_product.route");
 
 require("dotenv").config()
 
+const cors = require("cors")
 const app = express()
 app.use(cors())
 
