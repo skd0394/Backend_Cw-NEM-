@@ -41,7 +41,7 @@ UserRouter.get("/get_registered_user", async (req, res) => {
       });
     }
   } catch (err) {
-    res.status(400).send({ error: "something went wron in backen service !" });
+    res.status(400).send({ error: "something went wrong in backend service !" });
     console.log("found this errror:", err);
   }
 });

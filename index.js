@@ -16,7 +16,6 @@ app.use(express.json())
 app.use("/", getRouter)
 app.use("/user", UserRouter);
 app.use("/cart",CartRouter)
-
 app.use("/",getRouter)
 app.use("/admin",adminRouter)
 
