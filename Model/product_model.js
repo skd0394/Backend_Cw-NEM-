@@ -12,6 +12,7 @@ const productSchema = mongoose.Schema({
   category: String,
   userID: String,
   quantity: Number,
+  productId:String
 });
 
 const ProductModel = mongoose.model("medi_products", productSchema);
