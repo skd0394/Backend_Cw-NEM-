@@ -10,10 +10,11 @@ require("dotenv").config()
 
 const cors = require('cors');
 const corsOptions ={
-    origin:'http://localhost:3000', 
-    credentials:true,            //access-control-allow-credentials:true
+    origin:['http://localhost:3000', 'https://medi-hub-admin.vercel.app'],
+    credentials:true,            
     optionSuccessStatus:200
 }
+
 const app = express()
 app.use(cors(corsOptions))
 
